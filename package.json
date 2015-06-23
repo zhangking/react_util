@@ -1,0 +1,20 @@
+{
+  "name": "react_util",
+  "version": "0.0.1",
+  "description": "react util",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangking/react_util"
+  },
+  "keywords": [
+    "react",
+    "util"
+  ],
+  "author": "zhangking",
+  "license": "MIT",
+  "homepage": "https://github.com/zhangking/react_util",
+  "dependencies": {
+    "react": "^0.13.1"
+  }
+}
