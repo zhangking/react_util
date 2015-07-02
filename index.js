@@ -158,6 +158,14 @@ var event = {
                elem['on' + type] = null;
            }
 	},
+	one:function(componentOrElement,type,handler){
+		var elem = React.findDOMNode(componentOrElement);
+		var self = this;
+		this.add(elem,type,function(e){
+			handler.call(elem,e);
+			self.remove(elem,type,handler);
+		});
+	},
 	addEnd:function(elem,handler){
 		if (endEvents.length === 0) {
 	      window.setTimeout(handler, 0);
